@@ -4,11 +4,14 @@ var points = {};
 var nodos = new vis.DataSet(points);
 var vertices = [];
 
-var openFile = function (event) {
-  var input = event.target;
 
+var openFile = function (event) {
+ 
+  var input = event.target;
+ matrix=[];
+ vertices=[];
   var reader = new FileReader();
-  reader.onload = function () {
+  reader.onload = function () {    
     var text = reader.result;
     var text = text.split(/[\s,]+/);
 
@@ -35,6 +38,7 @@ var openFile = function (event) {
 
 function Indexado() {
 
+  nodos = new vis.DataSet(points);
 
   var t = 65;
 
@@ -47,7 +51,7 @@ function Indexado() {
 
 
 function Mostrar() {
-
+console.log("sandia");
 
   Indexado();
 
