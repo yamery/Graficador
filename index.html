@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SCRIPTS -->
+
+
+  <link href="vis/dist/vis.css" rel="stylesheet" type="text/css">
+
+  <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript" src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="bootstrap-4.3.1-dist/js/jquery-3.4.1.min.js"></script>
+  <link href="stilo.css" rel="stylesheet">
+
+  <script src="vis/dist/vis.js"></script>
+  <script src="Doc.js"></script>
+
+
+
+
+
+  <title>Arbol</title>
+</head>
+
+<body class="text-center ">
+
+  <div class="container-fluid ">
+
+
+
+
+    <div class="row">
+
+      <div class="col">
+        <br><br>
+        <h1 class="text-center font-weight-bold modal-title " >GRAFICADOR Y SIMPLIFICADOR DE GRAFOS</h1>
+      </div>
+    </div>
+
+
+    <br><br>
+    <div class="row text-center">
+
+      <div class="col-sm">
+        <br><br>
+        <input type='file' accept='text/plain' onchange='openFile(event)'><br>
+        <img id='output'>
+        <br><br>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="card-deck mb-4 text-center">
+      <div class="card mb-3 shadow-sm">
+
+        <div class="card-header">
+          <h2 class="my-0 font-weight-normal text-dark "><strong>GRAFO MATRIZ INTRODUCIDA</strong></h2>
+        </div>
+
+        <div class="card-body">
+
+          <h2></h2>
+          <br>
+          <div id="grafo1" class></div>
+          <br>
+          <button type="button" id="boton" class="btn btn-primary" disabled="true" onclick="Mostrar()">Graficar</button>
+
+
+        </div>
+      </div>
+      <div class="card mb-3 shadow-sm">
+
+        <div class="card-header">
+          <h2 class="my-0 font-weight-normal text-dark"><strong>ARBOL DE COSTO MINIMO</strong></h2>
+        </div>
+
+        <div class="card-body">
+
+
+          <br>
+          <div id="arbol" class></div>
+          <br>
+          <button type="button" id="boton2" class="btn btn-primary" disabled="true"
+            onclick="Kruskal()">Graficar</button>
+
+
+        </div>
+      </div>
+      <div class="card mb-3 shadow-sm border-right-0">
+        <div class="card-header">
+          <h2 class="my-0 font-weight-normal text-dark"><strong>FORMA CORRECTA DE ESCRIBIR LA MATRIZ EN EL .TXT</strong>
+          </h2>
+        </div>
+        <div class="card-body ">
+          <div class="mt-3 mb-4">
+            <br>
+            <h3 class="text-dark">(USAR COMAS)</h3>
+            <br>
+            <img src="imagen.png" alt="..." class="img-thumbnail">
+
+            <div id="Respuesta"></div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <script src="Doc.js"></script>
+
+
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top ">
+      <div class="row ">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="mapache.svg" alt="" width="24" height="24">
+          <small class="d-block mb-3 text-muted">© 2019</small>
+        </div>
+        <div class="col-2 col-ms">
+          <h5>CREADORES:</h5>
+
+        </div>
+        <div class="col-9 col-lg">
+          <h5>YENIFER VALENCIA ESTRADA</h5>
+          <br>
+          <h5>CINDY YESENIA ANGULO</h5>
+        </div>
+        <div class="col-9 col-lg">
+          <h5>JONATHAN QUIÑONEZ RAMIREZ</h5>
+          <br>
+          <h5>JEIDY MURILLO PEREA</h5>
+        </div>
+
+
+    </footer>
+  </div>
+
+
+
+</body>
+
+
+</html>
